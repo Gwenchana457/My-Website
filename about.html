@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+    body {
+      font-family: 'georgia', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f9f6f1;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .timeline-container {
+      display: flex;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Timeline line */
+    .timeline {
+      position: relative;
+      width: 120px;
+      margin-right: 40px;
+      border-right: 2px solid #ddd;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-right: 20px;
+      text-align: right;
+      margin-bottom: 60px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: -6px;
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border: 2px solid #007BFF;
+      border-radius: 50%;
+    }
+
+    .timeline-item:last-child::after {
+      background-color: #007BFF;
+    }
+
+    /* Chapter cards */
+    .chapters {
+      flex: 1;
+    }
+
+    .chapter {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      display: flex;
+      margin-bottom: 25px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .chapter:hover {
+      transform: translateY(-3px);
+    }
+
+    .chapter img {
+      width: 180px;
+      object-fit: cover;
+    }
+
+    .chapter-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .chapter h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .chapter p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .read-btn {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .read-btn:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-container {
+        flex-direction: column;
+      }
+
+      .timeline {
+        display: none;
+      }
+
+      .chapter {
+        flex-direction: column;
+      }
+
+      .chapter img {
+        width: 100%;
+      }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer .social {
+      margin-top: 15px;
+    }
+
+    footer .social a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 16px;
+    }
+
+    footer input[type="email"] {
+      margin-left: 10px;
+      padding: 5px;
+      border: none;
+      border-radius: 2px;
+      width: 200px;
+    }
+
+    footer button {
+      padding: 5px 10px;
+      border: none;
+      background: #555;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;}
+      }
+</style>
+ <header>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/mountain-logo.png" alt="The Journey Logo"></a>
+      <span class="site-title">MY DIGITAL ODYSSEY</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">MY STORY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="contact-btn">CONTACT</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/gwen.divinagracia.98"><img src="images/facebook-logo.png" alt="Facebook"></a>
+    <a href="https://x.com/Flame_457"><img src="images/x-logo.png" alt="X"></a>
+    <a href="https://www.instagram.com/gwen.chanha457/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+  </div>
+ </header>
+</head>
+<body>
+
+  <h1>LIFE'S JOURNEY: EXPLORE THE CHAPTERS</h1>
+  <p class="subtitle">Navigate the Defining Moments of My Story</p>
+
+  <div class="timeline-container">
+    <!-- Timeline -->
+    <div class="timeline">
+      <div class="timeline-item">2004–2012</div>
+      <div class="timeline-item">2013–2022</div>
+      <div class="timeline-item">2022 →<br>Present</div>
+    </div>
+
+    <!-- Chapter Cards -->
+    <div class="chapters">
+
+      <div class="chapter">
+        <img src="images/roots and discovery.png" alt="Roots and Discovery">
+        <div class="chapter-content">
+          <h2>THE EARLY YEARS: ROOTS & DISCOVERY</h2>
+          <p>A whimsical look at childhood adventures, family bonds, and the spark that ignited a lifelong passion.</p>
+          <a href="chapter1.html" class="read-btn">Read Chapter 1</a>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <img src="images/why i chose IT.png" alt="Why I Chose IT">
+        <div class="chapter-content">
+          <h2>FINDING MY VOICE: WHY I CHOSE I.T.</h2>
+          <p>A navigating look at finding the right path for myself.</p>
+          <a href="chapter2.html" class="read-btn">Read Chapter 2</a>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <img src="images/reflection and creation.png" alt="Reflection and Creation">
+        <div class="chapter-content">
+          <h2>ECHOES OF TOMORROW: REFLECTION & CREATION</h2>
+          <p>The lessons I learned in more than two decades of my life, and the power of hope and creativity.</p>
+          <a href="chapter3.html" class="read-btn">Read Chapter 3</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<footer>
+    <p>© 2024 My Digital Odyssey. All Rights Reserved.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/gwen.divinagracia.98"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/Flame_457"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/gwen.chanha457/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div style="margin-top:10px;">
+      <input type="email" placeholder="Your Email">
+      <button>Subscribe</button>
+    </div>
+</body>
+</html>

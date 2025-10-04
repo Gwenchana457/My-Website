@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Cherished Memories</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #f7f4ef;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url(images/gallery.png); /* Replace with your photo */
+      background-size: cover;
+      background-position: center;
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      margin: 8px 0 20px;
+    }
+    .btn {
+      background: white;
+      border: 2px solid #333;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Section Titles */
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    /* Image Grid */
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .gallery-item {
+      width: 300px;
+      background: #fdfbf8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+    .caption {
+      padding: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer .social {
+      margin: 10px 0;
+    }
+    footer .social a {
+      margin: 0 5px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    footer input {
+      padding: 6px 10px;
+      border-radius: 4px;
+      border: none;
+      margin-right: 5px;
+    }
+    footer button {
+      padding: 6px 12px;
+      border: none;
+      background: #555;
+      color: white;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+ <header>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/mountain-logo.png" alt="The Journey Logo"></a>
+      <span class="site-title">MY DIGITAL ODYSSEY</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">MY STORY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="contact-btn">CONTACT</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/gwen.divinagracia.98"><img src="images/facebook-logo.png" alt="Facebook"></a>
+    <a href="https://x.com/Flame_457"><img src="images/x-logo.png" alt="X"></a>
+    <a href="https://www.instagram.com/gwen.chanha457/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+  </div>
+ </header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>GALLERY</h1>
+    <p>A Collection of Cherished Memories</p>
+  </div>
+</section>
+
+<!-- Family Section -->
+<section id="family">
+  <h2>Family</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/reunion1.jpg" alt="Reunion">
+      <div class="caption">Reunion</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/family.jpg" alt="Collage">
+      <div class="caption">Family Collage</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/familypic.jpg" alt="Christmas Party">
+      <div class="caption">Christmas Party</div>
+    </div>
+  </div>
+</section>
+
+<!-- Best Friends Section -->
+<section id="friends">
+  <h2>Best Friends</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/bestfriends.jpg" alt="Bestfriends">
+      <div class="caption">Birthday</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/bestfriends2.jpg" alt="Bestfriends">
+      <div class="caption">Collage</div>
+    </div>
+  </div>
+</section>
+
+<!-- Colleagues Section -->
+<section id="colleagues">
+  <h2>Colleagues</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/colleagues.jpg" alt="Qualfon Colleagues">
+      <div class="caption">Qualfon</div>
+    </div>
+    <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/colleagues2.jpg" alt="Conduent Colleagues">
+      <div class="caption">Conduent</div>
+    </div>
+    <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/colleagues3.jpg" alt="Alorica Colleagues">
+      <div class="caption">Alorica</div>
+    </div>
+  </div>
+</section>
+
+<!-- Cousins Section -->
+<section id="colleagues">
+  <h2>Cousins</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/cousins.jpg" alt="Cousins">
+      <div class="caption">Counsins from Father side</div>
+    </div>
+    <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/cousins1.jpg" alt="Cousins">
+      <div class="caption">Cousins Hangout at the Beach</div>
+    </div>
+    <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/cousins2.jpg" alt="Cousins">
+      <div class="caption">Cousins from Mother side</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2024 My Digital Odyssey. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

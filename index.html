@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Odyssey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .hero {
+      position: relative;
+      height: 500px;
+      background: url(images/hahaha.jpg) center/cover no-repeat; /* Replace with your photo */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 10px 0 0;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-style: italic;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background: white;
+      border: 2px solid #222;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-family: 'Georgia', serif;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .welcome {
+      text-align: center;
+    }
+
+    .welcome img {
+      width: 80px;
+      border-radius: 50%;
+      margin: 15px 0;
+    }
+
+    .featured-chapters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .chapter {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .chapter img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer .social {
+      margin-top: 15px;
+    }
+
+    footer .social a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 16px;
+    }
+
+    footer input[type="email"] {
+      margin-left: 10px;
+      padding: 5px;
+      border: none;
+      border-radius: 2px;
+      width: 200px;
+    }
+
+    footer button {
+      padding: 5px 10px;
+      border: none;
+      background: #555;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;}
+    </style>
+ <header>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/mountain-logo.png" alt="The Journey Logo"></a>
+      <span class="site-title">MY DIGITAL ODYSSEY</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">MY STORY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="contact-btn">CONTACT</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/gwen.divinagracia.98"><img src="images/facebook-logo.png" alt="Facebook"></a>
+    <a href="https://x.com/Flame_457"><img src="images/x-logo.png" alt="X"></a>
+    <a href="https://www.instagram.com/gwen.chanha457/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+  </div>
+ </header>
+ <style>
+ body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #333;
+      background-color: #f9f6f1;
+      line-height: 1.6;
+ }
+</style>
+</head>
+<body>
+    <section class="hero">
+    <h1>GWEN DIVINAGRACIA</h1>
+    <p>In a world of fleeting interests, I found a field that rewards my constant desire for what's next.</p>
+    <button onclick="window.location.href='about.html'">BEGIN MY STORY</button>
+  </section>
+
+  <!-- Welcome -->
+  <section class="welcome">
+    <h2>WELCOME</h2>
+    <p>
+      It’s a tale as old as time: the struggle to choose a path in a world of endless possibilities. My journey has been a chaotic, sometimes comical, exploration of fleeting interests and grand ambitions. From dreaming of becoming a crime-fighting hero to briefly embracing the life of a master hacker, I've dabbled in it all—each new hobby a brief, passionate obsession that burned brightly before I moved on to the next. 
+      This is the story of lessons learned, found, and the unyielding spirit of discovery.
+    </p>
+    <img src="images/3758e6a0-6763-49a4-8dd3-2ad7940834f9.jpeg" alt="Gwen Divinagracia"> <!-- Replace with your portrait -->
+  </section>
+
+  <!-- Featured Chapters -->
+  <section>
+    <h2>FEATURED CHAPTERS</h2>
+    <div class="featured-chapters">
+      <div class="chapter">
+        <a href="chapter1.html"><img src="images/roots and beginnings.png" alt="Roots & Discoveries"></a>
+        <h4>Roots & Discoveries</h4>
+      </div>
+      <div class="chapter">
+        <a href="chapter2.html"><img src="images/finding my voice.png" alt="Finding My Voice"></a>
+        <h4>FInding My Voice</h4>
+      </div>
+      <div class="chapter">
+        <a href="chapter3.html"><img src="images/echoes of tomorrow.png" alt="Echoes of Tomorrow"></a>
+        <h4>Echoes of Tomorrow</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>GALLERY</h2>
+    <div class="gallery">
+      <img src="images/bacolod1.jpg" alt="gallery 1">
+      <img src="images/childpic2.jpg" alt="gallery 2">
+      <img src="images/familypic.jpg" alt="gallery 3">
+      <img src="images/w:cousins.jpg" alt="gallery 4">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 My Digital Odyssey. All Rights Reserved.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/gwen.divinagracia.98"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/Flame_457"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/gwen.chanha457/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div style="margin-top:10px;">
+      <input type="email" placeholder="Your Email">
+      <button>Subscribe</button>
+    </div>
+</body>
+</html>

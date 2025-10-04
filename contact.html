@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Digital Odyssey</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #f7f4ef;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url(images/contactss.png) center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      margin: 8px 0 20px;
+    }
+
+    /* Content Layout */
+    .content {
+      display: flex;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 50px;
+    }
+    .contact-form {
+      flex: 2;
+    }
+    .contact-form h2 {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .contact-form p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    /* Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: "Georgia", serif;
+    }
+    textarea {
+      height: 120px;
+    }
+    button {
+      width: 150px;
+      padding: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #555;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      flex: 1;
+    }
+    .sidebar img {
+      width: 120px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .sidebar h3 {
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .social {
+      text-align: center;
+      margin-bottom: 25px;
+      margin-top: 10px;
+    }
+    .social a {
+      display: block;
+      text-decoration: none;
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 6px;
+      margin: 0 6px;
+      display: inline-block;
+    }
+    .social a:hover {
+      text-decoration: none;
+      color: #000
+    }
+
+    /* Mailing List */
+    .mailing-list {
+      text-align: center;
+    }
+    .mailing-list input {
+      width: 70%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .mailing-list button {
+      width: 80%;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+.social img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.social img:hover {
+  filter: grayscale(0%);
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+ <header>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/mountain-logo.png" alt="The Journey Logo"></a>
+      <span class="site-title">MY DIGITAL ODYSSEY</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">MY STORY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="contact-btn">CONTACT</a>
+  </div>
+
+ </header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>CONTACT</h1>
+    <p>Let’s Connect & Share</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<div class="content">
+  <div class="contact-form">
+    <h2>Get in Touch</h2>
+    <p>If you’d like to reach out, collaborate, or share your story, please fill in the form below — I’d love to hear from you.</p>
+
+    <h2>Latest Entries</h2>
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <aside class="sidebar">
+    <img src="images/contact.png" alt="Logo Emblem">
+    <h3>Social</h3>
+    <div class="social">
+      <img src="images/facebook-logo.png" alt="Facebook.png"><a href="https://www.facebook.com/gwen.divinagracia.98"> @ Gwen Paghinayan Divinagracia</a> <br>
+      <img src="images/instagram-logo.png" alt="Intagram.png"><a href="https://www.instagram.com/gwen.chanha457/">@gwen.chanha457</a> <br>
+      <img src="images/x-logo.png" alt="X.png"><a href="https://x.com/Flame_457"> @flame_457</a>
+    </div>
+
+    <h3>Mailing List</h3>
+    <div class="mailing-list">
+      <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </aside>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2024 My Digital Odyssey. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
